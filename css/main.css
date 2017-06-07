@@ -37,6 +37,17 @@ body {
                               horizontally within the column  */
 }
 
+.horizontal-align {
+  display: flex;
+  flex-direction: column;
+}
+
+.below-each {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bg-primary {
   background-color: brown!important;
 }
@@ -54,4 +65,8 @@ body {
 
 #wrapper {
   background-color: #eeeed1;
+}
+
+.set-temperature {
+  width: 65px;
 }

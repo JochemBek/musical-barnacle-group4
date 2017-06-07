@@ -259,3 +259,10 @@
     temp = parseFloat(temp);
     return ( temp >= MinTemperature && temp <= MaxTemperature);
   }
+  
+  /* Rounds float to given amount of decimals, found at: https://stackoverflow.com/questions/7342957/how-do-you-round-to-1-decimal-place-in-javascript 
+  */
+  function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+  }

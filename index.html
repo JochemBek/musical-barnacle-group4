@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+
         <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         
@@ -56,7 +57,18 @@
         </div>
         <div class="row vertical-align set-t-row">
           <div id="wrapper" class="col-12 wrapper-index">
-            <p class="text-center"> Here be things </p>
+            <div class="horizontal-align">
+              <div class="below-each">
+                <i id="tempUp" class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="below-each"> 
+                <input id="setTemperature" type="number" class="form-control text-center set-temperature" aria-describedby="basic-addon2" onfocus="value=''" step="0.1"/>
+                <span class="input-group-addon" id="basic-addon2">°C</span>
+              </div>
+              <div class="below-each">
+                <i id="tempDown" class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +83,7 @@
       <script src="js/model.js"></script>
       
       <script src="js/view/indexView.js"></script>
-      <!---<script src="js/controller/indexController.js"></script>--->
+      <script src="js/controller/indexController.js"></script>
 
     </body>
 </html>
