@@ -1,0 +1,4 @@
+var ScheduleView = function ( model ){
+
+  
+}

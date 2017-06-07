@@ -7,20 +7,42 @@ body {
 }
 
 .container-fluid {
+  background-color: #eeeed1;
   height: 100%;
 }
 
+/*
 .row {
   height: 100%;
+}*/
+
+.current-t-row {
+  height: 33%;
 }
 
-#wrapper {
-  height: 100%;
-  background-color: #eeeed1;
+.set-t-row {
+  height: 33%;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
 }
 
 .bg-primary {
   background-color: brown!important;
+}
+
+.navbar-brand {
+  width: 34.275px;
 }
 
 .navbar-text {
@@ -28,4 +50,8 @@ body {
   color: rgba(255, 255, 255, 1)!important;
   position: absolute;
   left: 0;
+}
+
+#wrapper {
+  background-color: #eeeed1;
 }

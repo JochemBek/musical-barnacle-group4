@@ -1,0 +1,3 @@
+var IndexController = function( model ){
+
+}

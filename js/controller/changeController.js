@@ -1,0 +1,3 @@
+var ChangeController = function( model ){
+
+}

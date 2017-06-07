@@ -27,7 +27,7 @@
         <a class="navbar-brand" href="#">
           <i class="fa fa-thermometer-half fa-lg fa-fw" aria-hidden="true" href="index.html"></i>
         </a>
-        <p class="navbar-text"> Thermostat </p>
+        <p style="display: none" class="navbar-text"> Thermostat </p>
           
                 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,21 +45,33 @@
         </div>
       </nav>
         
-      <div class="container-fluid">
-        <div class="row">
-          <div id="wrapper" class="col-12">
+      <div style="display: none" class="container-fluid">
+        <div class="row vertical-align current-t-row">
+          <div id="wrapper" class="col-12 wrapper-index">
+            <p class="text-center">Current Temperature</p>
+          </div> 
+          <div id="wrapper" class="col-12 wrapper-index">
+            <p id="currentTemp" class="text-center"></p>
+          </div>
+        </div>
+        <div class="row vertical-align set-t-row">
+          <div id="wrapper" class="col-12 wrapper-index">
+            <p class="text-center"> Here be things </p>
           </div>
         </div>
       </div>
 
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    
-    <script src="js/responsive.js"></script>
+      <script src="js/vendor/jquery-3.2.1.min.js"></script>
+      <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script> 
+      
+      <script src="js/responsive.js"></script>
 
-    <!--- <script src="js/main.js"></script> -->
-    <script src="js/model.js"></script>
+      <!--- MVC scripts -->
+      <script src="js/model.js"></script>
+      
+      <script src="js/view/indexView.js"></script>
+      <!---<script src="js/controller/indexController.js"></script>--->
 
     </body>
 </html>
