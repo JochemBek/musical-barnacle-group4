@@ -8,10 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      
         
         <!--- <link rel="stylesheet" href="css/main.css">--->
 
@@ -57,7 +60,7 @@
         </div>
         <div class="row vertical-align set-t-row">
           <div id="wrapper" class="col-12 wrapper-index">
-            <div class="horizontal-align">
+            <div class="horizontal-align full-width">
               <div class="below-each">
                 <i id="tempUp" class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
               </div>
@@ -68,12 +71,27 @@
               <div class="below-each">
                 <i id="tempDown" class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
               </div>
+              <div class="below-each full-width vertical-space">
+                <div id="slider"></div>
+              </div>
+              <div class="below-each">
+                <button id="lock">Lock</button>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="row vertical-align to-schedule-row">
+          <div id="wrapper" class="col-12 wrapper-index">
+            <button id="toSchedule">Schedule</button>
           </div>
         </div>
       </div>
 
       <script src="js/vendor/jquery-3.2.1.min.js"></script>
+      <script src="js/vendor/jquery-ui.min.js"></script>
+      
+      <script src="js/vendor/touch-punch.min.js"></script>
+
       <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
       <script src="js/vendor/bootstrap.min.js"></script> 
       
